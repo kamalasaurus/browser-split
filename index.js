@@ -29,7 +29,7 @@
  * split('..word1 word2..', /([a-z]+)(\d+)/i);
  * // -> ['..', 'word', '1', ' ', 'word', '2', '..']
  */
-module.exports = (function split(undef) {
+export default (function split(undef) {
 
   var nativeSplit = String.prototype.split,
     compliantExecNpcg = /()??/.exec("")[1] === undef,
